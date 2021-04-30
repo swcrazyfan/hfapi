@@ -55,3 +55,6 @@ class Client:
 
     def token_classification(self, input, model="dslim/bert-base-NER"):
         return self._call(input, model)
+    
+    def translation(self, input, model="Helsinki-NLP/opus-mt-en-zh"):
+        return self._call(input, model)
